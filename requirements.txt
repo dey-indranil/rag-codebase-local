@@ -1,0 +1,12 @@
+llama-index>=0.12.8
+langchain-community>=0.3.13
+qdrant_client>=1.12.1
+torch==2.2.2
+transformers>=4.47.1
+llama-index-llms-ollama>=0.5.0
+python-dotenv>=0.21.0
+llama-index-embeddings-langchain>=0.3.0
+sentence-transformers==3.3.1
+tf-keras=2.16.0
+torchaudio==2.2.2 
+torchvision==0.17.2
