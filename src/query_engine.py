@@ -19,7 +19,9 @@ print(f"Memory usage: {memory_in_bytes / (1024 * 1024):.2f} MB")
 
 
 # setting up the llm
-llm = Ollama(model="tinyllama", request_timeout=60.0) 
+llm = Ollama(model="llama3.1", request_timeout=60.0) 
+#works
+#tinyllama
 #oom list
 #starcoder2:3b
 #llama3.2
