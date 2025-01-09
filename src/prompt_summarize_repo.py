@@ -19,5 +19,14 @@ qa_prompt_tmpl = PromptTemplate(
 
 query_engine.update_prompts({"response_synthesizer:text_qa_template": qa_prompt_tmpl})
 
-response = query_engine.query('What is this repository about?')
-print(response)
+print("Welcome! Ask me questions about the repository. Type 'exit' to quit.")
+
+while True:
+    user_query = input("\nYour question: ")
+    if not user_query:
+        continue
+    if user_query.lower() == 'exit':
+        print("Goodbye!")
+        break
+    response = query_engine.query(user_query)
+    print("\nAnswer:", response)
